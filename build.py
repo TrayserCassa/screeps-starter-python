@@ -176,7 +176,7 @@ def copy_artifacts(config):
         else:
             raise
 
-    shutil.copyfile(os.path.join(config.source_dir, '__javascript__', 'main.js'),
+    shutil.copyfile(os.path.join(config.source_dir, '__target__', 'main.js'),
                     os.path.join(dist_directory, 'main.js'))
 
     js_directory = os.path.join(config.base_dir, 'js_files')
