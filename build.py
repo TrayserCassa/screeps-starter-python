@@ -348,6 +348,7 @@ def main():
         expander_control.expand_files()
 
     build(config)
+    remove_syntax_problems(config)
     upload(config)
 
 
